@@ -35,16 +35,16 @@ Aplicação disponível em `http://localhost:5173`.
 
 ## Endpoints:
 ```markdown
-| Método | Endpoint                   | Descrição                         |
-|--------|-----------------------------|-------------------------------------|
-| POST   | /api/users                 | Cadastrar usuário                   |
-| POST   | /api/auth/login             | Login de usuário                    |
-| POST   | /api/auth/logout            | Logout                              |
+| Método | Endpoint                     | Descrição                           |
+|--------|------------------------------|-------------------------------------|
+| POST   | /api/users                   | Cadastrar usuário                   |
+| POST   | /api/auth/login              | Login de usuário                    |
+| POST   | /api/auth/logout             | Logout                              |
 | GET    | /api/auth/me                 | Sessão atual (usuário ou ONG)       |
-| POST   | /api/ongs                   | Cadastrar ONG                       |
+| POST   | /api/ongs                    | Cadastrar ONG                       |
 | POST   | /api/ongs/login              | Login de ONG                        |
-| POST   | /api/animals                | Cadastrar animal (ONG autenticada)  |
-| GET    | /api/animals                | Listar animais (filtros opcionais)  |
+| POST   | /api/animals                 | Cadastrar animal (ONG autenticada)  |
+| GET    | /api/animals                 | Listar animais (filtros opcionais)  |
 | GET    | /api/animals/{id}            | Detalhes do animal                  |
 | PUT    | /api/animals/{id}            | Editar animal (dono)                |
 | DELETE | /api/animals/{id}            | Excluir animal (dono)               |
