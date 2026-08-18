@@ -1,7 +1,7 @@
 <template>
   <div class="page-dashboard">
     <header>
-      <h2>PetHope 🐾</h2>
+      <h2><img src="/pata-branca.png" class="logo-pata" alt="" />PetHope</h2>
       <a href="#" style="color: white" @click.prevent="sair">Sair</a>
     </header>
 
@@ -9,9 +9,9 @@
       <h2>Bem-vindo, {{ nome }}</h2>
 
       <div class="card">
-        <h3>Adotar um pet</h3>
-        <p>Veja os animais disponíveis para adoção.</p>
-        <router-link class="btn" to="/adocao">Ver pets</router-link>
+        <h3>ONGs parceiras</h3>
+        <p>Conheça as ONGs cadastradas e veja os animais de cada uma.</p>
+        <router-link class="btn" :to="{ name: 'ongs' }">Ver ONGs</router-link>
       </div>
 
       <div class="card">
@@ -19,6 +19,7 @@
         <p>Veja os animais que você adotou.</p>
         <router-link class="btn" to="/minhas_adocoes">Minhas solicitações de adoção</router-link>
       </div>
+
     </div>
   </div>
 </template>
